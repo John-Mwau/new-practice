@@ -189,6 +189,8 @@ body{
          list-style: none;
          display: inline-block;
          position: relative;
+         margin-top: 20px;
+         margin-left: -200px;
      }
      .nav ul li{
          max-width:200px;
@@ -204,6 +206,10 @@ body{
     .checkbtn{
         display: inline-block;
         font-size: 25px;
+        float: left;
+    }
+    .checkbtn {
+        margin-left: 20px;
     }
     .content{
         display: flex;
