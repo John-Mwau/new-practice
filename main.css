@@ -188,7 +188,7 @@ body{
      .nav ul{
          list-style: none;
          display: inline-block;
-         position: fixed;
+         position: relative;
      }
      .nav ul li{
          max-width:200px;
