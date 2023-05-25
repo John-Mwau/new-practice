@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding:0px;
+    text-decoration: none;
+    list-style: none;
 }
 body{
     background-color: hsl(25, 100%, 94%);
@@ -14,208 +16,72 @@ body{
     margin: 10px 150px 0px 150px;
     padding-bottom: 5px;
 }
-.nav nav{
-display: flex;
-flex-direction: row;
-}
-.nav ul{
-    list-style: none;
+.navbar{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav ul li{
-    max-width:200px;
-    padding: 3px 10px 2px 5px;
-    margin: 5px;
-    border-radius: 5px;
-    letter-spacing: 2px;
-}
-.nav ul li a{
-    text-decoration: none;
-    color: hsl(219, 9%, 45%)
-}
-.nav ul li a:hover{
-    background-color: white;
-    border-radius: 5px;
-    padding: 3px 10px 2px 5px;
-}
-.main-menu2{
+.navbar-links ul{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
-.sub-menu1{
-    padding: 0px 10px 0px 20px;
+.navbar-links ul li{
+    border-radius: 5px;
+    padding: 8px;
 }
-.sub-menu1 i{
-    font-size: 20px;
-    color:hsl(219, 9%, 45%);
-    padding-top: 3px;
+.navbar-links ul li a{
+    display: block;
 }
-.sub-menu2{
-    padding: 0px 10px 0px 20px;
-}
-.sub-menu2 img {
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    display: flex;
     width: 30px;
     height: 30px;
-    border-radius: 20px;
 }
-.content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+.toggle-button i{
+    font-size: 25px;
+    width: 100%;
 }
 .menu-2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 20px 10px 20px;
 }
-.main-image img{
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-}
-.sub-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5px;
-}
-.sub-images img {
-    border-radius: 8%;
-    margin: 8px;
-    width: 60px;
-    height: 60px;
-}
-.main-banner{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-.banner{
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-left: 30px;
-}
-.banner-h2{
-    font-size: 22px;
-}
-.price-tags{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-.tag-1{
-    margin-right: 20px;
-}
-.tag-2{
-    width: 50px;
-    height: 20px;
-    margin-top: 5px;
-    border-radius: 5px;
-    background-color: bisque;
-}
-.banner-p1{
-    color:hsl(26, 100%, 55%);
-}
-.banner-2{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
-.banner-submenu{
-    display: inline-flex;
-    justify-content: space-around;
-    width: 100px;
-    border-radius: 8px;
-    height: 35px;
+.cataloque i{
     font-size: 20px;
-    font-weight: bolder;
-    background-color: hsl(220, 14%, 75%);
+    padding: 8px 20px 5px 5px;
 }
-.cat{
-    width: 200px;
-    height: 35px;
+.profile img{
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
-    background-color: hsl(26, 100%, 55%);
-    margin-left: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.cat i{
-    padding: 7px 10px 5px 20px;
-    text-align: center; 
-}
-.cat2{
-    margin-left: -40px;
-}
-.cat p{
-    padding: 5px;
-    text-align: center;
 }
 @media screen and (max-width:600px){
-    *{
-        margin: 0px;
-        padding:0px;
-    }
     .mainwrapper{
         display: flex;
         flex-direction: row;
         justify-content: center;
         justify-content: space-between;
-        width: 100%;
-        margin: 5px 20px 0px 20px;
-        border-bottom: none;
-        border-color: none;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+        margin: 10px 150px 0px 150px;
+        padding-bottom: 5px;
     }
-    .nav nav{
+    .navbar-links{
+        display: none;
+    }  
+    .toggle-button{
         display: flex;
-        flex-direction: row;
-     }
-     .nav ul{
-         list-style: none;
-         display: inline-block;
-        text-align: center;
-        margin-top: 30px;
-        margin-left: 10px;
-     }
-     .nav ul li{
-         max-width:200px;
-         padding: 3px 10px 2px 5px;
-     }
-     .nav ul li a{
-         text-decoration: none;
-         color: hsl(219, 9%, 45%)
-     }
-    .content{
+    }
+    .navbar{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 20px;
+        align-items: start;
     }
-    .sub-images{
-        display: none;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 5px;
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
     }
-    .cat{
-        width: 200px;
-        height: 35px;
-        border-radius: 10px;
-        background-color: hsl(26, 100%, 55%);
-        margin-left: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .navbar-links ul li {
+        text-align: center;
     }
 }
-
